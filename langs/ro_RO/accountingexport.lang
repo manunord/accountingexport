@@ -1,0 +1,176 @@
+# Export to accounting module for Dolibarr
+# Copyright (C) 2012-2016   Raphaël Doursenaud  <rdoursenaud@gpcsolutions.fr>
+# Copyright (C) 2016        Marina Dias         <mdias@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Name = Export către contabilitate
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Desc = Export date contabile
+
+#
+# Permissions
+#
+Permission6487006 = Exportă datele contabile
+
+#
+# Admin page
+#
+AccountingExportSetup = Setpri Modul export către contabilitate
+Settings = Setări
+BookingJournalCodes = Coduri jurnale contabile
+ACCOUNTING_EXPORT_PURCHASES_JOURNAL_CODE = Jurnal Cumpărări
+ACCOUNTING_EXPORT_SALES_JOURNAL_CODE = Jurnal Vânzări
+LiquidAssetsCodesAreBankAccountsRefs = Codurile jurnalelor de trezorerie sunt referinţele conturilor bancare corespondente
+StandardAccountNumbers = Conturi contabile standard
+NativeVATAccountsNumbers = Native VAT accounts numbers
+ExtraAccountNumbers = Conturi contabile suplimentare
+ACCOUNTING_EXPORT_SUSPENSE_ACCOUNT_CODE = Cont tranzit
+ACCOUNTING_EXPORT_OUTPUT_TAX_ACCOUNT_CODE = TVA colectată
+ACCOUNTING_EXPORT_INPUT_TAX_ACCOUNT_CODE = TVA deductibilă
+Saved = Înregistrată
+UnexpectedError = Eroare neaşteptată, contactaţi administratorul
+BankAccountNumbers = Numere conturi bancă
+StandardVATNumbersAreNotUsed = Codurile de TVQ nu sunt folosite deoarece acestea nu au informatii directe.
+Options = Options
+UseSupplierRefInsteadOfDolibarrRef = Use supplier reference instead of Dolibarr reference for purchases journal document number
+FileFormat = Format fişier
+Preset = Preset format
+Encoding = Codare caractere
+Newline = Linie nouă
+UnixLinuxMacOSX = Unix / Linux / Mac OS X
+DosWindows = DOS / Windows
+MacOSClassic = Mac OS Classic
+ResetValues= Valori implicite
+ConfirmReset = Doriţi resetarea tuturor parametrilor la valorile predefinite ?
+EmptyValuesNotAllowed = Valorile vide nu sunt permise
+RowsHeader = Antet Coloane
+FollowLinkToConfigure = Urmăriţi linkul pentru accesarea paginii de configurare
+DateFormat = Format date
+FileExtension = Extensie fişier
+CSV = .csv
+TSV = .tsv
+TXT = .txt
+XLS = .xls
+XLSX = xslsx
+LineFieldDelimiter = Separator fişier
+Custom = Custom
+Comma = Comma (,)
+Colon = Colon (:)
+Dot = Dot (.)
+Semicolon = Semicolon (;)
+Space = Space ( )
+Tabulation = Tabulation (\t)
+CarriageReturn = Carriage return (\r)
+LineFeed = Line feed (\n)
+CarriageReturnLineFeed = Carriage return + line feed (\r\n)
+LineFieldEnclosure = Închidere câmp
+ReservedCharacters = Reserved characters
+StrippedList = The characters listed here will be stripped from the export fields.
+ContentFormat = Content format
+None = None
+Native = Native
+CielComptaEvolution = Ciel Compta Evolution
+Coala = Coala (Sage)
+Quadra = Quadra (Cegid)
+Sage100 = Sage 100
+Abysse = Abysse Sport
+DelimiterSeparatedValues = Delimiter Separated values
+Excel5 = Microsoft Excel 95 (BIFF5-8)
+Excel2007 = Microsoft Excel 2007 (Office Open XML SpreadsheetML / ECMA-376 / ISO/IEC 29500)
+
+#
+# Documentation page
+#
+AccountingExportDocumentation = Documentaţie  Modul Export către contabilitate
+OnlineUserDocumentation = Online user documentation (French only)
+
+#
+# Support page
+#
+AccountingExportSupport = Asistenţă Modul Export către contabilitate
+Support = Asistenţă
+SupportCenter = Support center
+SupportConditions = Support is only offerred to customers with an up-to-date subscription and exclusively through the support center or special phone number.<br>No support will be offerred outside these conditions.
+SupportGuidelines = Please follow these %s guidelines %s before asking for support.
+
+#
+# About page
+#
+AccountingExportAbout = Despre modulul export către contabilitate
+Version = Versiune
+Publisher = Editor
+License = Licenţă
+Credits = Credite
+Development = Development
+SoftwareEngineer = inginer software
+DeveloperFeminine = Developer
+Contributor = contributor
+Ressources = Resurse
+
+#
+# Menu
+#
+AccountingExport = Export către contabilitate
+
+#
+# Main page
+#
+Journals = Journals
+PurchasesJournal = Jurnal Cumpărări
+SalesJournal = Jurnal Vânzări
+TreasuryJournals = Jurnal de Trezorerie
+Period = Perioada
+NoAccountAvailable = Nici un cont disponibil
+Export = Exportă
+PreviousExports = Exporturi precedente
+NoExportFileAvailable = Nici un fişier de export disponibil
+DeleteFile = Şterge fişier
+ConfirmDeleteFile = Sigur doriţi să ştergeţi fişierul ?
+Deleted = şters
+UnableToDeleteFile = Imposibil de şters fişierul
+NothingToExport = Nimic de exportat, selectaţi vă rog un jurnal
+SuccessfullyCreated = corect creat
+FileAlreadyExists = Fişierul există deja
+ForwardPeriod = Sfârşitul perioadei nu trebuie să fie inainte de start
+EmptyExport = Nici o dată în această perioadă
+UnsupportedAccountingMode = Unsupported accounting mode: Incomes/Expenses. This export is only for Payables/Receivables.
+
+#
+# Class
+#
+CantCreatePath = Can't create the path. Please get in touch with the admin.
+CantWritePath = Can't write into path. Please get in touch with the admin.
+CantOpenFile = Nu pot deschide fişierul
+ISO-8859-1 = ISO 8859-1
+UTF-8 = UTF-8
+ISO-8601 = ISO 8601 (YYYY-MM-DD)
+DD/MM/YYYY = DD/MM/YYYY
+
+#
+# Errors
+#
+ModuleNotConfigured = Acest modul necesită configurare completă.
+AccountRefsShouldBeUnique = Acest modul necesită referinţele conturilor sa fie unice.
+ToConfigurePleaseGoTo = Pentru a corecta configuraţia, mergeţi la
+ModuleConfigPage = pagina de configurare a modulului
+PleaseAskYourAdmin = Nu aveţi drepturi de modificare a configuraţiei, luaţi contact cu administratorul
+AccountConfigurationPages = paginile următoare de configurare conturi

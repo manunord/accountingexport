@@ -1,0 +1,176 @@
+# Export to accounting module for Dolibarr
+# Copyright (C) 2012-2016   Raphaël Doursenaud  <rdoursenaud@gpcsolutions.fr>
+# Copyright (C) 2016        Marina Dias         <mdias@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Name = Exportar a contabilidad
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Desc = Exportar datos contables
+
+#
+# Permissions
+#
+Permission6487006 = Exportar datos contables
+
+#
+# Admin page
+#
+AccountingExportSetup = Exportar a configuración contable
+Settings = Configuración
+BookingJournalCodes = Códigos libros de diario
+ACCOUNTING_EXPORT_PURCHASES_JOURNAL_CODE = Diario de compras
+ACCOUNTING_EXPORT_SALES_JOURNAL_CODE = Diario de ventas
+LiquidAssetsCodesAreBankAccountsRefs = Los códigos de activos líquidos corresponden a las referencias de cuentas bancarias
+StandardAccountNumbers = Números contables estándard
+NativeVATAccountsNumbers = IVA nativo códigos contables
+ExtraAccountNumbers = Números de cuenta extra
+ACCOUNTING_EXPORT_SUSPENSE_ACCOUNT_CODE = Cuenta de orden
+ACCOUNTING_EXPORT_OUTPUT_TAX_ACCOUNT_CODE = Cuenta IVA soportado
+ACCOUNTING_EXPORT_INPUT_TAX_ACCOUNT_CODE = Cuenta IVA repercutido
+Saved = Guardado
+UnexpectedError = Error inesperado, por favor póngase en contacto con el administrador
+BankAccountNumbers = Números de cuentas bancarias
+StandardVATNumbersAreNotUsed = Los Números de IVA estándar no se utilizan debido a que estos no tienen información de dirección.
+Options = Opciones
+UseSupplierRefInsteadOfDolibarrRef = Usa la referencia de proveedor en lugar de la de Dolibarr para el número de documente del diario de compras
+FileFormat = Formato archivo
+Preset = Preset format
+Encoding = Codificación de caracteres
+Newline = Nueva línea
+UnixLinuxMacOSX = Unix / Linux / Mac OS X
+DosWindows = DOS / Windows
+MacOSClassic = Mac OS Clásico
+ResetValues= Valores por defecto
+ConfirmReset = ¿Desea restablecer todos los parámetros a los valores por defecto?
+EmptyValuesNotAllowed = No se permiten valores vacíos.
+RowsHeader = Filas de encabezado
+FollowLinkToConfigure = Siga el enlace para acceder a la configuración
+DateFormat = Formato fecha
+FileExtension = Extensión de archivo
+CSV = .csv
+TSV = .tsv
+TXT = .txt
+XLS = .xls
+XLSX = xslsx
+LineFieldDelimiter = Campo separador
+Custom = Custom
+Comma = Comma (,)
+Colon = Colon (:)
+Dot = Dot (.)
+Semicolon = Semicolon (;)
+Space = Space ( )
+Tabulation = Tabulation (\t)
+CarriageReturn = Carriage return (\r)
+LineFeed = Line feed (\n)
+CarriageReturnLineFeed = Carriage return + line feed (\r\n)
+LineFieldEnclosure = Campo fin de línea
+ReservedCharacters = Caracteres reservados
+StrippedList = Los carácteres que figuran aquí serán limpiados de los campos de exportación.
+ContentFormat = Content format
+None = None
+Native = Nativo
+CielComptaEvolution = Ciel Compta Evolution
+Coala = Coala (Sage)
+Quadra = Quadra (Cegid)
+Sage100 = Sage 100
+Abysse = Abysse Sport
+DelimiterSeparatedValues = Delimiter Separated values
+Excel5 = Microsoft Excel 95 (BIFF5-8)
+Excel2007 = Microsoft Excel 2007 (Office Open XML SpreadsheetML / ECMA-376 / ISO/IEC 29500)
+
+#
+# Documentation page
+#
+AccountingExportDocumentation = Documentación del módulo Exportación a contabilidad
+OnlineUserDocumentation = Documentación de usuario online (sólo francés)
+
+#
+# Support page
+#
+AccountingExportSupport = Soporte del módulo Exportación a contabilidad
+Support = Soporte
+SupportCenter = Centro de soporte
+SupportConditions = El soporte solo es ofrecido a clientes suscritos a las actualizaciones y exclusivamente a través del centro de soporte o número de teléfono especial.<br>Ningún soporte será ofrecido fuera de estas condiciones.
+SupportGuidelines = Por favor sigue estas %s guías %s antes de pedir soporte.
+
+#
+# About page
+#
+AccountingExportAbout = Acerca del módulo exportación a contabilidad
+Version = Versión
+Publisher = Editor
+License = Licencia
+Credits = Créditos
+Development = Desarrollo
+SoftwareEngineer = ingeniero de software
+DeveloperFeminine = Desarrollador
+Contributor = Contribuyente
+Ressources = Activos
+
+#
+# Menu
+#
+AccountingExport = Exportación contable
+
+#
+# Main page
+#
+Journals = Diarios
+PurchasesJournal = Diario de compras
+SalesJournal = Diario de ventas
+TreasuryJournals = Diario de tesorería
+Period = Periodo
+NoAccountAvailable = Sin cuenta disponible
+Export = Exportar
+PreviousExports = Exportaciones previas
+NoExportFileAvailable = Sin archivos de exportación disponibles
+DeleteFile = Eliminar archivo
+ConfirmDeleteFile = ¿Está seguro de querer eliminar?
+Deleted = eliminado
+UnableToDeleteFile = Imposible eliminar el archivo
+NothingToExport = Nada a exportar, por favor seleccione un diario
+SuccessfullyCreated = creado con éxito
+FileAlreadyExists = El archivo ya existe
+ForwardPeriod = El final del período no puede ser anterior al principio
+EmptyExport = Sin datos para ese periodo
+UnsupportedAccountingMode = Modo contable no soportado: Ingresos/Gastos. Esta exportación es solo para Créditos/Deudas.
+
+#
+# Class
+#
+CantCreatePath = No se puede crear la ruta. Por favor ponte en contacto con el administrador.
+CantWritePath = No se puede escribir en la ruta. Por favor ponte en contacto con el administrador.
+CantOpenFile = No es posible abrir el archivo
+ISO-8859-1 = ISO 8859-1
+UTF-8 = UTF-8
+ISO-8601 = ISO 8601 (YYYY-MM-DD)
+DD/MM/YYYY = DD/MM/YYYY
+
+#
+# Errors
+#
+ModuleNotConfigured = Este módulo necesita una configuración completa.
+AccountRefsShouldBeUnique = Este módulo necesita cuentas de referencia únicas.
+ToConfigurePleaseGoTo = Para corregir la configuración vaya a
+ModuleConfigPage = la página de configuración del módulo
+PleaseAskYourAdmin = No tiene el permisos para modificar la configuración del mismo, por favor póngase en contacto con el administrador.
+AccountConfigurationPages = las siguientes páginas de configuración de cuentas

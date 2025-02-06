@@ -1,0 +1,176 @@
+# Export to accounting module for Dolibarr
+# Copyright (C) 2012-2016   Raphaël Doursenaud  <rdoursenaud@gpcsolutions.fr>
+# Copyright (C) 2016        Marina Dias         <mdias@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Name = Export to accounting
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Desc = Export accounting data
+
+#
+# Permissions
+#
+Permission6487006 = Export accounting data
+
+#
+# Admin page
+#
+AccountingExportSetup = Export to accounting setup
+Settings = Settings
+BookingJournalCodes = Booking journal codes
+ACCOUNTING_EXPORT_PURCHASES_JOURNAL_CODE = Purchases journal
+ACCOUNTING_EXPORT_SALES_JOURNAL_CODE = Sales journal
+LiquidAssetsCodesAreBankAccountsRefs = Liquid assets codes are the corresponding bank account references
+StandardAccountNumbers = Standard account numbers
+NativeVATAccountsNumbers = Native VAT accounts numbers
+ExtraAccountNumbers = Extra account numbers
+ACCOUNTING_EXPORT_SUSPENSE_ACCOUNT_CODE = Suspense account
+ACCOUNTING_EXPORT_OUTPUT_TAX_ACCOUNT_CODE = Output tax account
+ACCOUNTING_EXPORT_INPUT_TAX_ACCOUNT_CODE = Input tax account
+Saved = Saved
+UnexpectedError = Unexpected error, please contact an administrator
+BankAccountNumbers = Bank account numbers
+StandardVATNumbersAreNotUsed = Standard VAT numbers are not used because these don't have the direction information.
+Options = Options
+UseSupplierRefInsteadOfDolibarrRef = Use supplier reference instead of Dolibarr reference for purchases journal document number
+FileFormat = File format
+Preset = Preset format
+Encoding = Character encoding
+Newline = Newline
+UnixLinuxMacOSX = Unix / Linux / Mac OS X
+DosWindows = DOS / Windows
+MacOSClassic = Mac OS Classic
+ResetValues= Default values
+ConfirmReset = Do you want to reset all parameters to default values ?
+EmptyValuesNotAllowed = Empty values are not allowed.
+RowsHeader = Rows header
+FollowLinkToConfigure = Follow the link to access configuration
+DateFormat = Date format
+FileExtension = File extension
+CSV = .csv
+TSV = .tsv
+TXT = .txt
+XLS = .xls
+XLSX = xslsx
+LineFieldDelimiter = Field separator
+Custom = Custom
+Comma = Comma (,)
+Colon = Colon (:)
+Dot = Dot (.)
+Semicolon = Semicolon (;)
+Space = Space ( )
+Tabulation = Tabulation (\t)
+CarriageReturn = Carriage return (\r)
+LineFeed = Line feed (\n)
+CarriageReturnLineFeed = Carriage return + line feed (\r\n)
+LineFieldEnclosure = Field enclosure
+ReservedCharacters = Reserved characters
+StrippedList = The characters listed here will be stripped from the export fields.
+ContentFormat = Content format
+None = None
+Native = Native
+CielComptaEvolution = Ciel Compta Evolution
+Coala = Coala (Sage)
+Quadra = Quadra (Cegid)
+Sage100 = Sage 100
+Abysse = Abysse Sport
+DelimiterSeparatedValues = Delimiter Separated values
+Excel5 = Microsoft Excel 95 (BIFF5-8)
+Excel2007 = Microsoft Excel 2007 (Office Open XML SpreadsheetML / ECMA-376 / ISO/IEC 29500)
+
+#
+# Documentation page
+#
+AccountingExportDocumentation = Export to accounting module documentation
+OnlineUserDocumentation = Online user documentation (French only)
+
+#
+# Support page
+#
+AccountingExportSupport = Export to accounting module support
+Support = Support
+SupportCenter = Support center
+SupportConditions = Support is only offerred to customers with an up-to-date subscription and exclusively through the support center or special phone number.<br>No support will be offerred outside these conditions.
+SupportGuidelines = Please follow these %s guidelines %s before asking for support.
+
+#
+# About page
+#
+AccountingExportAbout = About export to accounting module
+Version = Version
+Publisher = Publisher
+License = Licence
+Credits = Credits
+Development = Development
+SoftwareEngineer = software engineer
+DeveloperFeminine = Developer
+Contributor = contributor
+Ressources = Assets
+
+#
+# Menu
+#
+AccountingExport = Export accounting
+
+#
+# Main page
+#
+Journals = Journals
+PurchasesJournal = Purchases journal
+SalesJournal = Sales journal
+TreasuryJournals = Treasury journals
+Period = Period
+NoAccountAvailable = No Account Available
+Export = Export
+PreviousExports = Previous exports
+NoExportFileAvailable = No export file available
+DeleteFile = Delete file
+ConfirmDeleteFile = Are you sure you want to delete
+Deleted = deleted
+UnableToDeleteFile = Unable to delete file
+NothingToExport = Nothing to export, please select a journal
+SuccessfullyCreated = successfully created
+FileAlreadyExists = The file already exists
+ForwardPeriod = Period end musn't be before start
+EmptyExport = No data for this period
+UnsupportedAccountingMode = Unsupported accounting mode: Incomes/Expenses. This export is only for Payables/Receivables.
+
+#
+# Class
+#
+CantCreatePath = Can't create the path. Please get in touch with the admin.
+CantWritePath = Can't write into path. Please get in touch with the admin.
+CantOpenFile = Can't open file
+ISO-8859-1 = ISO 8859-1
+UTF-8 = UTF-8
+ISO-8601 = ISO 8601 (YYYY-MM-DD)
+DD/MM/YYYY = DD/MM/YYYY
+
+#
+# Errors
+#
+ModuleNotConfigured = This module needs complete configuration.
+AccountRefsShouldBeUnique = This module needs the account references to be unique.
+ToConfigurePleaseGoTo = To correct the configuration, please go to
+ModuleConfigPage = the module configuration page
+PleaseAskYourAdmin = You don't have the right to modify the configuration yourself, please get in touch with the admin.
+AccountConfigurationPages = the following account configuration pages

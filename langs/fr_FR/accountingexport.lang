@@ -1,0 +1,176 @@
+# Export to accounting module for Dolibarr
+# Copyright (C) 2012-2016   Raphaël Doursenaud  <rdoursenaud@gpcsolutions.fr>
+# Copyright (C) 2016        Marina Dias         <mdias@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Name = Export vers comptabilité
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105000Desc = Export des données comptables
+
+#
+# Permissions
+#
+Permission6487006 = Exporter les données comptables
+
+#
+# Admin page
+#
+AccountingExportSetup = Configuration du module export vers comptabilité
+Settings = Configuration
+BookingJournalCodes = Codes des journaux de comptabilité
+ACCOUNTING_EXPORT_PURCHASES_JOURNAL_CODE = Journal des achats
+ACCOUNTING_EXPORT_SALES_JOURNAL_CODE = Journal des ventes
+LiquidAssetsCodesAreBankAccountsRefs = Les codes des journaux de trésorerie sont les références des comptes bancaires correspondant
+StandardAccountNumbers = Numéros des comptes comptables standards
+NativeVATAccountsNumbers = Numéros des comptes de TVA natifs
+ExtraAccountNumbers = Numéros des comptes comptables supplémentaires
+ACCOUNTING_EXPORT_SUSPENSE_ACCOUNT_CODE = Compte d'attente
+ACCOUNTING_EXPORT_OUTPUT_TAX_ACCOUNT_CODE = TVA collectée
+ACCOUNTING_EXPORT_INPUT_TAX_ACCOUNT_CODE = TVA déductible
+Saved = Enregistré
+UnexpectedError = Erreur inattendue, veuillez contacter un administrateur
+BankAccountNumbers = Numéros des comptes comptables de trésorerie
+StandardVATNumbersAreNotUsed = Les numéros de comptes de TVA standards ne sont pas utilisés car ils ne comportent pas l'information sur le sens de l'écriture.
+Options = Options
+UseSupplierRefInsteadOfDolibarrRef = Utiliser la référence fournisseur au lieu de la référence Dolibarr pour le numéro de pièce du journal des achats.
+FileFormat = Format de fichier
+Preset = Format pré-enregistré
+Encoding = Codage de caractères
+Newline = Fin de ligne
+UnixLinuxMacOSX = Unix / Linux / Mac OS X
+DosWindows = DOS / Windows
+MacOSClassic = Mac OS Classic
+ResetValues= Valeurs par défaut
+ConfirmReset = Voulez-vous réinitialiser tous les paramètres aux valeurs par défaut ?
+EmptyValuesNotAllowed = Les valeurs vides ne sont pas permises.
+RowsHeader = Entête de colonnes
+FollowLinkToConfigure = Suivre le lien pour accéder à la page de configuration
+DateFormat = Format des dates
+FileExtension = Extension du fichier
+CSV = .csv
+TSV = .tsv
+TXT = .txt
+XLS = .xls
+XLSX = .xlsx
+LineFieldDelimiter = Séparateur de valeurs
+Custom = Sur mesure
+Comma = Virgule (,)
+Colon = Deux-points (:)
+Dot = Point (.)
+Semicolon = Point-virgule (;)
+Space = Espace ( )
+Tabulation = Tabulation (\t)
+CarriageReturn = Retour chariot (\r)
+LineFeed = Saut de ligne (\n)
+CarriageReturnLineFeed = Retour chariot + saut de ligne (\r\n)
+LineFieldEnclosure = Caractère d'encadrement des valeurs
+ReservedCharacters = Caractères réservés
+StrippedList = Les caractères listés ici seront supprimés des champs exportés.
+ContentFormat = Format du contenu
+None = Aucun
+Native = Natif
+CielComptaEvolution = Ciel Compta Evolution
+Coala = Coala (Sage)
+Quadra = Quadra (Cegid)
+Sage100 = Sage Ligne 100
+Abysse = Abysse Sport
+DelimiterSeparatedValues = Valeurs séparées par délimiteur
+Excel5 = Microsoft Excel 95 (BIFF5-8)
+Excel2007 = Microsoft Excel 2007 (Office Open XML SpreadsheetML / ECMA-376 / ISO/IEC 29500)
+
+#
+# Documentation page
+#
+AccountingExportDocumentation = Documentation du module export vers comptabilité
+OnlineUserDocumentation = Documentation utilisateur en ligne
+
+#
+# Support page
+#
+AccountingExportSupport = Assistance sur le module export vers comptabilité
+Support = Assistance
+SupportCenter = Plateforme d'assistance
+SupportConditions = L'assistance n'est fournie qu'avec une souscription à jour et exclusivement au travers de la plateforme d'assistance ou du numéro de téléphone dédié.<br>Aucune assistance ne sera fournie en dehors de ces conditions.
+SupportGuidelines = Merci de suivre ces %s instructions %s avant de contacter l'assistance.
+
+#
+# About page
+#
+AccountingExportAbout = À propos du module export vers comptabilité
+Version = Version
+Publisher = Éditeur
+License = Licence
+Credits = Crédits
+Development = Développement
+SoftwareEngineer = ingénieur conception et développement
+DeveloperFeminine = Développeuse
+Contributor = contributeur
+Ressources = Ressources
+
+#
+# Menu
+#
+AccountingExport = Export vers comptabilité
+
+#
+# Main page
+#
+Journals = Journaux
+PurchasesJournal = Journal des achats
+SalesJournal = Journal des ventes
+TreasuryJournals = Journaux de trésorerie
+Period = Période
+NoAccountAvailable = Aucun compte disponible
+Export = Exporter
+PreviousExports = Exports précédents
+NoExportFileAvailable = Aucun fichier d'export disponible
+DeleteFile = Suppression de fichier
+ConfirmDeleteFile = Êtes-vous certain de vouloir supprimer le fichier
+Deleted = supprimé
+UnableToDeleteFile = Impossible de supprimer le fichier
+NothingToExport = Rien à exporter, veuillez sélectionner un journal
+SuccessfullyCreated = correctement créé
+FileAlreadyExists = Le fichier existe déjà
+ForwardPeriod = La date de fin de période ne doit pas précéder celle de début
+EmptyExport = Pas de données sur cette période
+UnsupportedAccountingMode = Mode de comptabilité non pris en charge : Recettes/Dépenses. Cet export n'est valable que pour une comptabilité Créances/Dettes.
+
+#
+# Class
+#
+CantCreatePath = Impossible de créer le chemin. Veuillez contacter l'administrateur.
+CantWritePath = Impossible d'écrire dans le chemin. Veuillez contacter l'administrateur.
+CantOpenFile = Impossible d'ouvrir le fichier
+ISO-8859-1 = ISO 8859-1
+UTF-8 = UTF-8
+ISO-8601 = ISO 8601 (AAAA-MM-JJ)
+DD/MM/YYYY = JJ/MM/AAAA
+
+#
+# Errors
+#
+ModuleNotConfigured = Ce module nécessite que la configuration soit complète.
+AccountRefsShouldBeUnique = Ce module nécessite que les références de comptes bancaire soient uniques.
+ToConfigurePleaseGoTo = Pour corriger la configuration, veuillez vous rendre sur
+ModuleConfigPage = la page de configuration du module
+PleaseAskYourAdmin = Vous n'avez pas les permissions nécessaires pour modifier la configuration du module vous-même, veuillez contacter l'administrateur.
+AccountConfigurationPages = les pages de configuration des comptes suivantes
